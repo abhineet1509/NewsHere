@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oswald:wght@200..700&display=swap');
+
+.parallax-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.parallax-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.parallax-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #dc4019;
+  color: #fbfcf4;
+  text-align: left;
+}
+
+.parallax-text h1 {
+  font-size: 100px;
+  margin-bottom: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #b8d4e3;
+}
+
+.parallax-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+}
+.video-container {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 1000;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 1) 100%);
+  pointer-events: none;
+}
+.text-overlay {
+  position: absolute;
+  top: 70%;
+  left: 2%;
+  transform: translateY(-50%);
+  color: #ced1bf;
+  font-size: 112px;
+  font-weight: bolder;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+@keyframes parallax {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.window-scrolled .background-video {
+  animation: parallax 1s ease-out infinite alternate;
+}
+.parallax-below-image{
+  width: 100px;
+}
+.image-below-parallax-text{
+  font-family: 'Bebas Neue', sans-serif;
+  word-spacing: 10px;
+}
+@media (max-width: 768px) {
+  .parallax-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .parallax-image {
+    height: 300px;
+    background-size: cover;
+  }
+
+  .parallax-text {
+    padding: 30px;
+  }
+  .text-overlay {
+    font-size: 36px;
+  }
+
+  .video-container {
+    height: 60vh;
+  }
+  .image-below-parallax {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-below-parallax-text {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 80%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  .parallax-text h1 {
+    font-size: 24px;
+  }
+
+  .parallax-text p {
+    font-size: 16px;
+  }
+
+  .parallax-image {
+    height: 200px;
+  }
+  .video-container {
+    height: 50vh;
+  }
+  .text-overlay {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .image-below-parallax-text {
+    font-size: 32px;
+  }
+
+  img {
+    width: 120%;
+  }
+}
