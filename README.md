@@ -55,8 +55,7 @@ Add category-wise news filtering
 Search functionality
 
 Save/bookmark articles locally
-
-🎥 [Click to watch demo video](https://raw.githubusercontent.com/abhineet1509/NewsHere/main/src/assets/NewsHere%20-%20Google%20Chrome%202025-04-05%2023-26-27%20%281%29.mp4)
+src/assets/Screenshot 2025-04-05 232513.png
 
 
 
