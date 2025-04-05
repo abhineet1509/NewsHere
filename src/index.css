@@ -1,1 +1,10 @@
-
+@import "tailwindcss";
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../assets/Poppins/Poppins-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Poppins-Light';
+    src: url('../assets/Poppins/Poppins-Light.ttf');
+  }

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './NewsRemainder.css';
 import img10 from '../assets/img10.png';
 
-const TypingEffect = ({ typingSpeed = 100, deletingSpeed = 50, pauseTime = 1000 }) => {
-  const quote = `In a world that never slows down,  <br />
-  Headlines rise in every town.  <br />
-  From facts to stories that spark the soul,  <br />
+const NewsRemainder = ({ typingSpeed = 100, deletingSpeed = 0, pauseTime = 1000 }) => {
+  const quote = `In a world that never slows down, <br />
+  Headlines rise in every town. <br />
+  From facts to stories that spark the soul, <br />
   Our app keeps you in control.`;
 
   const [displayedText, setDisplayedText] = useState('');
@@ -14,7 +14,6 @@ const TypingEffect = ({ typingSpeed = 100, deletingSpeed = 50, pauseTime = 1000 
 
   useEffect(() => {
     if (!deleting && index < quote.length) {
-      
       const typingTimeout = setTimeout(() => {
         setDisplayedText(quote.slice(0, index + 1));
         setIndex(index + 1);
@@ -22,7 +21,6 @@ const TypingEffect = ({ typingSpeed = 100, deletingSpeed = 50, pauseTime = 1000 
 
       return () => clearTimeout(typingTimeout);
     } else if (deleting && index > 0) {
-   
       const deletingTimeout = setTimeout(() => {
         setDisplayedText(quote.slice(0, index - 1));
         setIndex(index - 1);
@@ -30,7 +28,6 @@ const TypingEffect = ({ typingSpeed = 100, deletingSpeed = 50, pauseTime = 1000 
 
       return () => clearTimeout(deletingTimeout);
     } else if (index === quote.length && !deleting) {
-    
       setTimeout(() => setDeleting(true), pauseTime);
     } else if (index === 0 && deleting) {
       setDeleting(false);
@@ -39,13 +36,21 @@ const TypingEffect = ({ typingSpeed = 100, deletingSpeed = 50, pauseTime = 1000 
 
   return (
     <div className="typing-container">
-      <h1 className="typing-text" dangerouslySetInnerHTML={{ __html: displayedText }} />
+      <h1
+        className="typing-text"
+        dangerouslySetInnerHTML={{ __html: displayedText }}
+      />
       <img src={img10} alt="Overlay" className="typing-image" />
     </div>
   );
 };
 
-export default TypingEffect;
+export default NewsRemainder;
+
+
+
+
+
 
 
 

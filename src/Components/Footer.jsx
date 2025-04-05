@@ -19,7 +19,7 @@ const Leg = () => {
       <div className="col">
         <input type="email" placeholder="Enter your email here" className="footer-input" />
         <button  className="footer-submit">
-          Get Subscribed
+           Subscribed
         </button>
       </div>
   
@@ -46,4 +46,4 @@ const Leg = () => {
   )
 }
 
-export default Leg
+export default Leg;

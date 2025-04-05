@@ -54,7 +54,7 @@ const Newsboard = ({category}) => {
                 }
       `}</style>
     
-      {articles.slice(0, 10).map((news, index) => (
+      {articles.slice(0, 20).map((news, index) => (
         <Newsitems
           key={index}
           title={news.title}

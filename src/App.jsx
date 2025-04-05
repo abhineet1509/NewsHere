@@ -1,32 +1,25 @@
 import { useState } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar';
-import Footer from './Components/HeadLineCard';
 import SignUp from './Components/SignUp';
 import Newsboard from './Components/Newsboard';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   const [category, setCategory] = useState("general");
-  const [isSignUp, setSignUp] = useState(false);
-
-  const toggleSignUp = () => {
-    setSignUp((prev) => !prev);
-  };
 
   return (
-    <>
-      {isSignUp ? (
-        <SignUp />
-      ) : (
-        <>
-          <NavBar setCategory={setCategory}  toggle={toggleSignUp} />
-          <Newsboard category={category} />
-        </>
-      )}
-     
-    </>
+    <Router>
+      <NavBar setCategory={setCategory} />
+      <Routes>
+        <Route path="/" element={<Newsboard category={category} />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
 
