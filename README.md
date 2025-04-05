@@ -55,10 +55,9 @@ Add category-wise news filtering
 Search functionality
 
 Save/bookmark articles locally
-[![Demo Screenshot](./src/assets/Screenshot%202025-04-05%20232513.png)](https://raw.githubusercontent.com/abhineet1509/NewsHere/main/src/assets/Screenshot%202025-04-05%20232513.png)
 
-[![Demo Screenshot 2](./src/assets/Screenshot%202025-04-05%20232552.png)](https://raw.githubusercontent.com/abhineet1509/NewsHere/main/src/assets/Screenshot%202025-04-05%20232552.png)
-
+[image alt](https://github.com/abhineet1509/NewsHere/blob/main/src/assets/Screenshot%202025-04-05%20232513.png?raw=true)
+[image alt](https://github.com/abhineet1509/NewsHere/blob/main/src/assets/Screenshot%202025-04-05%20232552.png?raw=true)
 
 
 
