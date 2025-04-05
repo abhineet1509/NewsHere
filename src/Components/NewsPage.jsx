@@ -1,6 +1,5 @@
 import React from 'react';
 import "./NewsPage.css";
-import img6 from '../assets/img6.png';
 import img7 from '../assets/img7.png';
 import cat2 from '../assets/cat2.jpg'; 
 import videoFile from "../assets/video.mp4";
