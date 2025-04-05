@@ -56,8 +56,8 @@ Search functionality
 
 Save/bookmark articles locally
 
-![image alt](https://github.com/abhineet1509/NewsHere/blob/main/src/assets/Screenshot%202025-04-05%20232513.png?raw=true)
-![image alt](https://github.com/abhineet1509/NewsHere/blob/main/src/assets/Screenshot%202025-04-05%20232552.png?raw=true)
+![Image Alt](https://github.com/abhineet1509/NewsHere/blob/7026c17e5af3d2f29d6e333fd1ea47e52cdf29ed/Screenshot%202025-04-05%20232513.png)
+![Image Alt](https://github.com/abhineet1509/NewsHere/blob/7026c17e5af3d2f29d6e333fd1ea47e52cdf29ed/Screenshot%202025-04-05%20232552.png)
 
 
 
