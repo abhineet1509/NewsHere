@@ -55,7 +55,9 @@ Add category-wise news filtering
 Search functionality
 
 Save/bookmark articles locally
-src/assets/Screenshot 2025-04-05 232513.png
+[![Demo Screenshot](./src/assets/Screenshot%202025-04-05%20232513.png)](https://raw.githubusercontent.com/abhineet1509/NewsHere/main/src/assets/Screenshot%202025-04-05%20232513.png)
+
+[![Demo Screenshot 2](./src/assets/Screenshot%202025-04-05%20232552.png)](https://raw.githubusercontent.com/abhineet1509/NewsHere/main/src/assets/Screenshot%202025-04-05%20232552.png)
 
 
 
