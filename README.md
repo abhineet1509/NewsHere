@@ -56,7 +56,8 @@ Search functionality
 
 Save/bookmark articles locally
 
-(https://github.com/abhineet1509/NewsHere/blob/main/src/assets/NewsHere%20-%20Google%20Chrome%202025-04-05%2023-26-27%20(1).mp4)
+🎥 [Click to watch demo video](https://raw.githubusercontent.com/abhineet1509/NewsHere/main/src/assets/NewsHere%20-%20Google%20Chrome%202025-04-05%2023-26-27%20(1).mp4)
+
 
 
 
